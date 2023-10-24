@@ -1,0 +1,1903 @@
+Praktikum6/11S3109-PABWE - =
+JavaScript Labs #3 Ey
+
+Setoran:
+File Laporan Pengamatan: PABWE_LaporanPraktikum6_{NIM}.pdf
+Source Code: PABWE_SourceCode6 {NIM}.zip
+
+Persiapan Praktikum:
+1. Workspace
+
+Buat workspace baru pada VSCode dengan penamaan “pabwe-praktikum-6-{nim}”.
+
+2. Assets
+Download dan extract assets 6 dari CIS ke workspace kamu, seperti berikut:
+
+~~ PABWE-PRAKTIKUM-6-11518005
+~ i assets’ vendor
+> B0 animate.css
+> IB bootstrap-5.2.3-dist
+» Im fontawesome-free-6.4.2-web
+> 0 sweetalert2
+Latihan Praktikum:
+
+Praktikan, amati, pahami, dan jawab semua pertanyaan yang ada serta laporkan hasilnya pada
+laporan praktikum.
+(1) Selesaikan terlebih dahulu kode program untuk dapat menjawab pertanyaan.
+
+A. Font Awesome 6
+Font Awesome 6 adalah perpustakaan ikon untuk meningkatkan tampilan dan
+fungsionalitas situs web Anda. Silahkan melihat ikon gratis lengkap pada situs:
+https://fontawesome.com/search?o=r&m=free
+
+1. Implementasi
+Buat dan modifikasi isi file “fontawesome6.html”, seperti berikut:
+| fontawesomeé . html |
+1 <IDOCTYPE html>
+
+2 <html lang="en">
+
+3
+
+4 <head>
+
+5 <meta charset="utf-8" />
+
+6 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+7 <title>Font Awesome 6</title>
+
+8 <link href="/assets/vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+rel="stylesheet" />
+
+9 <link href="/assets/vendor/fontawesome-free-6.4.2-web/css/all.min.css"
+rel="stylesheet" />
+
+10 </head>
+
+11
+
+12 <body>
+
+Praktikum 6 Page 1 of 25
+Praktikumé6/11S3109-PABWE
+
+del
+
+JavaScript Labs #3
+
+| fontawesomeé html
+13 <div class="container-fluid">
+14 <div class="row mt-3">
+15 <div class="col-12">
+16 <h1>Font Awesome 6</h1>
+17 <table class="table">
+18 <thead>
+19 <tr>
+20 <th scope="col">#</th>
+21 <th scope="col">Name</th>
+22 <th scope="col">Type</th>
+23 <th scope="col">Zoom</th>
+24 <th scope="col">Icon</th>
+25 </tr>
+26 </thead>
+27 <tbody>
+28 <tr>
+29 <th scope="row">1</th>
+30 <td>house</td>
+31 <td>Solid</td>
+32 <td>1x</td>
+33 <td>
+34 <i class="fa fa-house"></i>
+35 </td>
+36 </tr>
+37
+38 <tr>
+39 <th scope="row">2</th>
+40 <td>user</td>
+41 <td>Regular</td>
+42 <td>1x</td>
+43 <td>
+44 <i class="far fa-user"></i>
+45 </td>
+46 </tr>
+47
+48 <tr>
+49 <th scope="row">3</th>
+50 <td>facebook</td>
+51 <td>Brands</td>
+52 <td>1x</td>
+53 <td>
+54 <i class="fab fa-facebook"></i>
+55 </td>
+56 </tr>
+57
+58 <tr>
+59 <th scope="row">4</th>
+60 <td>download</td>
+61 <td>Solid</td>
+62 <td>2x</td>
+
+Praktikum 6
+
+Page 2 of 25
+Praktikumé6/11S3109-PABWE o e |
+a
+
+JavaScript Labs #3 AER
+
+| fontawesome6. html I
+63 <td>
+
+64 <i class="fa fa-download fa-2x"></i>
+
+65 </td>
+
+66 </tr>
+
+67 </tbody>
+
+68 </table>
+
+69 </div>
+
+70 </div>
+
+71 </div>
+
+72
+
+73 <script src="/assets/vendor/bootstrap-5.2.3-
+
+dist/js/bootstrap.bundle.min.js"></script>
+74 <script src="/assets/vendor/fontawesome-free-6.4.2-
+web/js/all.min.js" ></script>
+
+75
+76 </body>
+77
+78 </html>
+
+|
+Analisis cara kerja kode program di atas. Jalankan aplikasi menggunakan Live Server,
+
+selanjutnya amati tampilan pada halaman web browser dan console web browser.
+
+B. Animate.css
+
+Animate.css adalah perpustakaan CSS untuk menambahkan animasi ke elemen-elemen
+situs web dengan mudah. Silahkan melihat dokumentasi lengkap pada situs:
+https://animate.style/
+
+1. Implementasi
+
+Buat dan modifikasi isi file “animatecss.html”, seperti berikut:
+
+Janimatecss.html I
+1  <IDOCTYPE html>
+
+2 <html lang="en">
+
+3
+
+4 <head>
+
+5 <meta charset="utf-8" /»>
+
+6 <meta name="viewport" content="width=device-width, initial-scale=1" /»>
+
+7 <title>Animate CSS</title>
+
+8 <link href="/assets/vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css”
+rel="stylesheet" />
+
+9 <link href="/assets/vendor/fontawesome-free-6.4.2-web/css/all.min.css"
+rel="stylesheet" />
+
+10 <link href="/assets/vendor/animate.css/animate.min.css"
+rel="stylesheet" />
+
+11 </head>
+
+12
+
+13 <body style="overflow-x: hidden;">
+
+14 <div class="container-fluid">
+
+15 <div class="row mt-5">
+
+Praktikum 6 Page 3 of 25
+Praktikumé6/11S3109-PABWE r e |
+
+JavaScript Labs #3
+Janimatecss.html I
+
+16 <div class="col-12">
+
+17 <div class="position-relative">
+
+18 <h1 id="title" class="text-center">Animate CSS</h1>
+
+19 <h3 class="text-center text-muted animate animated
+animate flash">membuat animasi dengan mudah</h3>
+
+20 </div>
+
+21 <hr />
+
+22 <div class="d-flex justify-content-center flex-wrap gap-2">
+
+23 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"bounce’);">bounce</button>
+
+24 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"flash');">flash</button>
+
+25 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"pulse’);">pulse</button>
+
+26 <button class="btn btn-primary" onclick="animateCSS('#title',
+"swing');">swing</button>
+
+27 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"tada’);">tada</button>
+
+28 <button class="btn btn-primary" onclick="animateCSS( '#title",
+‘wobble ");">wobble</button>
+
+29 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+'jello');">jello</button>
+
+30 <button class="btn btn-primary" onclick="animateCSS( '#title",
+"backInDown");">backInDown</button>
+
+31 <button class="btn btn-primary” onclick="animateCSS( #title’,
+"backOutDown");">backOutDown</button>
+
+32 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"bounceIn');">bounceIn</button>
+
+33 <button class="btn btn-primary" onclick="animateCSS('#title’,
+"bounceOut");">bounceOut</button>
+
+34 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"flip');">flip</button>
+
+35 <button class="btn btn-primary"
+
+36 onclick="animateCSS( '#title",
+"lightSpeedInRight');">lightSpeedInRight</button>
+
+37 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+‘rotateIn’);">rotateIn</button>
+
+38 <button class="btn btn-primary" onclick="animateCSS('#title',
+'rotateOut');">rotateOut</button>
+
+39 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+'rollIn');">rollIn</button>
+
+40 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"zoomIn');">zoomIn</button>
+
+41 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"zoomQut"');">zoomOut</button>
+
+42 <button class="btn btn-primary" onclick="animateCSS( '#title",
+‘slideInDown');">slideInDown</button>
+
+43 <button class="btn btn-primary" onclick="animateCSS( '#title’,
+"slideOutDown");">slideOutDown</button>
+
+44 </div>
+
+Praktikum 6 Page 4 of 25
+Praktikumé6/11S3109-PABWE o e |
+===
+
+JavaScript Labs #3 =a
+Janimatecss.html I
+
+45 </div>
+
+46 </div>
+
+47 </div>
+
+48
+
+49 <script src="/assets/vendor/bootstrap-5.2.3-
+dist/js/bootstrap.bundle.min.js"></script>
+
+50 <script src="/assets/vendor/fontawesome-free-6.4.2-
+web/js/all.min.js" ></script>
+
+51
+
+52 <script>
+
+53 const animateCSS = (element, animation, prefix = 'animate_ ') =>
+
+54 // We create a Promise and return it
+
+55 new Promise( (resolve, reject) => {
+
+56 const animationName = "${prefix}${animation};
+
+57 const node = document.querySelector(element);
+
+58
+
+59 node.classList.add(" ${prefix}animated , animationName);
+
+60
+
+61 // When the animation ends, we clean the classes and resolve the
+Promise
+
+62 function handleAnimationEnd(event) {
+
+63 event.stopPropagation();
+
+64 node.classList.remove( ${prefix}tanimated’, animationName);
+
+65 resolve('Animation ended');
+
+66 }
+
+67
+
+68 node.addEventListener('animationend', handleAnimationEnd, {
+once: true });
+
+69 3)
+
+70 </script>
+
+71
+
+72 </body>
+
+73
+
+74 </html>
+
+|
+Analisis cara kerja kode program di atas. Jalankan aplikasi menggunakan Live Server,
+
+selanjutnya amati tampilan pada halaman web browser dan console web browser.
+
+C. Sweet Alert 2
+
+Sweet Alert 2 adalah perpustakaan JavaScript untuk pesan peringatan interaktif yang
+menarik di situs web. Silahkan melihat dokumentasi lengkap pada situs:
+https://sweetalert2.github.io/
+
+1. Implementasi
+Buat dan modifikasi isi file “sweetalert2.html”, seperti berikut:
+
+|sweetalert2. html
+
+1 <IDOCTYPE html>
+2 <html lang="en">
+
+Praktikum 6 Page 5 of 25
+Praktikumé6/11S3109-PABWE r e |
+
+JavaScript Labs #3
+|sweetalert2. html
+
+3
+
+4 <head>
+
+5 <meta charset="utf-8" />
+
+6 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+7 <title>Sweet Alert 2</title>
+
+8 <link href="/assets/vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+rel="stylesheet" />
+
+9 <link href="/assets/vendor/sweetalert2/dist/sweetalert2.min.css"
+rel="stylesheet" />
+
+10 <link href="/assets/vendor/fontawesome-free-6.4.2-web/css/all.min.css"
+rel="stylesheet" />
+
+11 <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet” />
+
+12 </head>
+
+13
+
+14 <body>
+
+15 <div class="container-fluid">
+
+16 <div class="row mt-3">
+
+17 <div class="col-12">
+
+18 <h1>Sweet Alert 2</h1>
+
+19 <table class="table">
+
+20 <thead>
+
+21 <tr>
+
+22 <th scope="col">#</th>
+
+23 <th scope="col">Title</th>
+
+24 <th scope="col">Action</th>
+
+25 </tr>
+
+26 </thead>
+
+27 <tbody>
+
+28 <tr>
+
+29 <th scope="row">1</th>
+
+30 <td>A basic message</td>
+
+31 <td>
+
+32 <button onclick="alertl();" class="btn btn-primary">
+
+33 Try
+
+34 </button>
+
+35 </td>
+
+36 </tr>
+
+37
+
+38 <tr>
+
+39 <th scope="row">2</th>
+
+40 <td>A title with a text under</td>
+
+41 <td>
+
+42 <button onclick="alert2();" class="btn btn-primary">
+
+43 Try
+
+44 </button>
+
+45 </td>
+
+46 </tr>
+
+47
+
+48 <tr>
+
+49 <th scope="row">3</th>
+
+Praktikum 6 Page 6 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+|sweetalert2.html
+50 <td>
+51 A modal with a title, an error icon, a text, and a footer
+52 </td>
+53 <td>
+54 <button onclick="alert3();" class="btn btn-primary">
+55 Try
+56 </button>
+57 </td>
+58 </tr>
+59
+60 <tr>
+61 <th scope="row">4</th>
+62 <td>A modal window with a long content inside:</td>
+63 <td>
+64 <button onclick="alert4();" class="btn btn-primary">
+65 Try
+66 </button>
+67 </td>
+68 </tr>
+69
+70 <tr>
+71 <th scope="row">5</th>
+72 <td>Custom HTML description and buttons with ARIA labels</td>
+73 <td>
+74 <button onclick="alert5();" class="btn btn-primary"”>
+75 Try
+76 </button>
+77 </td>
+78 </tr>
+79
+80 <tr>
+81 <th scope="row">6</th>
+82 <td>A dialog with three buttons</td>
+83 <td>
+84 <button onclick="alert6();" class="btn btn-primary">
+85 Try
+86 </button>
+87 </td>
+88 </tr>
+89
+90 <tr>
+91 <th scope="row">7</th>
+92 <td>A custom positioned dialog</td>
+93 <td>
+94 <button onclick="alert7();" class="btn btn-primary">
+95 Try
+96 </button>
+97 </td>
+98 </tr>
+99
+
+Praktikum 6 Page 7 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+|sweetalert2.html
+100 <tr>
+101 <th scope="row">8</th>
+102 <td>Custom animation with Animate.css</td>
+103 <td>
+104 <button onclick="alert8();" class="btn btn-primary">
+105 Try
+106 </button>
+107 </td>
+108 </tr>
+109
+110 <tr>
+111 <th scope="row">9</th>
+112 <td>
+113 A confirm dialog, with a function attached to the
+114 "Confirm" -button
+115 </td>
+116 <td>
+117 <button onclick="alert9();" class="btn btn-primary">
+118 Try
+119 </button>
+120 </td>
+121 </tr>
+122
+123 <tr>
+124 <th scope="row">10</th>
+125 <td>
+126 ... and by passing a parameter, you can execute something else
+127 for "Cancel™
+128 </td>
+129 <td>
+130 <button onclick="alert10();" class="btn btn-primary">
+131 Try
+132 </button>
+133 </td>
+134 </tr>
+135
+136 <tr>
+137 <th scope="row">11</th>
+138 <td>A message with a custom image</td>
+139 <td>
+140 <button onclick="alert11();" class="btn btn-primary">
+141 Try
+142 </button>
+143 </td>
+144 </tr>
+145
+146 <tr>
+147 <th scope="row">12</th>
+148 <td>A message with auto close timer</td>
+149 <td>
+
+Praktikum 6 Page 8 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+|sweetalert2.html
+150 <button onclick="alert12();" class="btn btn-primary">
+151 Try
+152 </button>
+153 </td>
+154 </tr>
+155
+156 <tr>
+157 <th scope="row">13</th>
+158 <td>AJAX request example</td>
+159 <td>
+160 <button onclick="alert13();" class="btn btn-primary">
+161 Try
+162 </button>
+163 </td>
+164 </tr>
+165 </tbody>
+166 </table>
+167 </div>
+168 </div>
+169 </div>
+170
+
+171 <script src="/assets/vendor/bootstrap-5.2.3-
+dist/js/bootstrap.bundle.min.js"></script>
+
+172 <script src="/assets/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
+173 <script src="/assets/vendor/fontawesome-free-6.4.2-web/js/all.min.js" ></script>
+174
+
+175 <script>
+
+176 function alertl() {
+
+177 Swal.fire("A basic message");
+
+178 }
+
+179
+
+180 function alert2() {
+
+181 Swal.fire("The Internet?", "That thing is still around?", "question");
+182 }
+
+183
+
+184 function alert3() {
+
+185 Swal.fire({
+
+186 icon: "error",
+
+187 title: "Oops...",
+
+188 text: "Something went wrong!”,
+
+189 footer: '<a href="#">Why do I have this issuer</a>"',
+
+190 3)
+
+191 }
+
+192
+
+193 function alert4d() {
+
+194 Swal.fire({
+
+195 imageUrl: "https://placeholder.pics/svg/300x1500",
+
+196 imageHeight: 1500,
+
+197 imageAlt: "A tall image",
+
+198 1);
+
+Praktikum 6 Page 9 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+|sweetalert2. html
+199
+200
+201 function alert5() {
+202 Swal.fire({
+203 title: "<strong>HTML <u>example</u></strong>",
+204 icon: "info",
+205 html:
+206 "You can use <b>bold text</b>, " +
+207 "<a href="//sweetalert2.github.io">links</a> ' +
+208 "and other HTML tags",
+209 showCloseButton: true,
+210 showCancelButton: true,
+211 focusConfirm: false,
+212 confirmButtonText: '<i class="fa fa-thumbs-up"></i> Great!"’,
+213 confirmButtonArialLabel: "Thumbs up, great!"”,
+214 cancelButtonText: "<i class="fa fa-thumbs-down"></i>",
+215 cancelButtonArialabel: "Thumbs down”,
+216 1)
+217
+218
+219 function alert6() {
+220 Swal.fire({
+221 title: "Do you want to save the changes?”,
+222 showDenyButton: true,
+223 showCancelButton: true,
+224 confirmButtonText: "Save",
+225 denyButtonText: "Don't save’,
+226 }).then((result) => {
+227 /* Read more about isConfirmed, isDenied below */
+228 if (result.isConfirmed) {
+229 Swal.fire("Saved!", "", "success");
+230 } else if (result.isDenied) {
+231 Swal.fire("Changes are not saved", "", "info");
+232 }
+233 3)
+234
+235
+236 function alert7() {
+237 Swal.fire({
+238 position: "top-end",
+239 icon: "success",
+240 title: "Your work has been saved",
+241 showConfirmButton: false,
+242 timer: 1500,
+243 1);
+244
+245
+246 function alert8() {
+247 Swal.fire({
+248 title: "Custom animation with Animate.css”,
+
+Praktikum 6 Page 10 of 25
+Praktikumé6/11S3109-PABWE o e |
+===
+
+JavaScript Labs #3 Ta
+|sweetalert2.html
+249 showClass: {
+250 popup: "animate__ animated animate__fadeInDown",
+251 1,
+252 hideClass: {
+253 popup: "animate__animated animate__fadeOutUp",
+254 3,
+255 3s
+256 }
+257
+258 function alert9() {
+259 Swal.fire({
+260 title: "Are you sure?",
+261 text: "You won't be able to revert this!”,
+262 icon: "warning",
+263 showCancelButton: true,
+264 confirmButtonColor: "#3085d6",
+265 cancelButtonColor: "#d33",
+266 confirmButtonText: "Yes, delete it!",
+267 }).then((result) => {
+268 if (result.isConfirmed) {
+269 Swal.fire("Deleted!", "Your file has been deleted.", "success");
+270 }
+271 1)
+272 }
+273
+274 function alerti1e() {
+275 const swalWithBootstrapButtons = Swal.mixin({
+276 customClass: {
+277 confirmButton: "btn btn-success”,
+278 cancelButton: "btn btn-danger”,
+279 },
+280 buttonsStyling: false,
+281 3)
+282
+283 swalWithBootstrapButtons
+284 fire({
+285 title: "Are you sure?”,
+286 text: "You won't be able to revert this!",
+287 icon: "warning",
+288 showCancelButton: true,
+289 confirmButtonText: "Yes, delete it!",
+290 cancelButtonText: "No, cancell!™,
+291 reverseButtons: true,
+292 19)
+293 .then((result) => {
+294 if (result.isConfirmed) {
+295 swalWithBootstrapButtons.fire(
+296 "Deleted!",
+297 "Your file has been deleted.”,
+298 "success"
+
+Praktikum 6 Page 11 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+
+|sweetalert2.html
+299 ¥s
+300 } else if (
+301 /* Read more about handling dismissals below */
+302 result.dismiss === Swal.DismissReason.cancel
+303 ) {
+304 swalWithBootstrapButtons.fire(
+305 "Cancelled",
+306 "Your imaginary file is safe :)",
+307 "error"
+308 )s
+309 }
+310 3)
+311 }
+312
+313 function alert11() {
+314 Swal.fire({
+315 title: "Sweet!",
+316 text: "Modal with a custom image.",
+317 imageUrl: "https://unsplash.it/400/200",
+318 imageWidth: 400,
+319 imageHeight: 200,
+320 imageAlt: "Custom image”,
+321 1)
+322 }
+323
+324 function alert12() {
+325 let timerInterval;
+326 Swal.fire({
+327 title: "Auto close alert!",
+328 html: "I will close in <b></b> milliseconds.",
+329 timer: 2000,
+330 timerProgressBar: true,
+331 didOpen: () => {
+332 Swal.showLoading();
+333 const b = Swal.getHtmlContainer().querySelector("b");
+334 timerInterval = setInterval(() => {
+335 b.textContent = Swal.getTimerLeft();
+336 }, 100);
+337 ¥,
+338 willClose: () => {
+339 clearInterval(timerInterval);
+340 },
+341 }).then( (result) => {
+342 /* Read more about handling dismissals below */
+343 if (result.dismiss === Swal.DismissReason.timer) {
+344 console.log("I was closed by the timer");
+345 }
+346 3)
+347 }
+348
+
+Praktikum 6 Page 12 of 25
+Praktikumé6/11S3109-PABWE o e |
+a
+
+JavaScript Labs #3 AER
+|sweetalert2.html I
+349 function alert13() {
+350 Swal.fire({
+351 title: "Submit your Github username”,
+352 input: "text",
+353 inputAttributes: {
+354 autocapitalize: "off",
+355 3,
+356 showCancelButton: true,
+357 confirmButtonText: "Look up",
+358 showLoaderOnConfirm: true,
+359 preConfirm: (login) => {
+360 return fetch( //api.github.com/users/${login}")
+361 .then( (response) => {
+362 if (!response.ok) {
+363 throw new Error(response.statusText);
+364 }
+365 return response.json();
+366 })
+367 .catch((error) => {
+368 Swal.showValidationMessage( Request failed: ${error} );
+369 1);
+370 x,
+371 allowOutsideClick: () => !Swal.isLoading(),
+372 }).then((result) => {
+373 if (result.isConfirmed) {
+374 Swal.fire({
+375 title: “${result.value.login}'s avatar’,
+376 imageUrl: result.value.avatar_url,
+377 3)
+378 }
+379 OF
+380 }
+
+381 </script>
+382 </body>
+383
+
+384 </html>
+EE
+Analisis cara kerja kode program di atas. Jalankan aplikasi menggunakan Live Server,
+
+selanjutnya amati tampilan pada halaman web browser dan console web browser.
+
+D. Website Agency
+Implementasi terkait penggunaan beberapa library CSS dan JavaScript dalam pembuatan
+website agency.
+
+| Workspace
+Buat workspace baru pada VSCode dengan penamaan “pabwe-praktikum-6d-{nim}”.
+
+Praktikum 6 Page 13 of 25
+Praktikumé6/11S3109-PABWE r e |
+
+JavaScript Labs #3
+
+| Assets
+Download dan extract assets 6d dari CIS ke workspace kamu, seperti berikut:
+
+~~ PABWE-PRAKTIKUM-6D-11518005
+~ [assets
+v IE css
+= style.css
+~ @% img
+® ctajpg
+B® why-us.png
+~ vendor
+» IW aos-master
+» Im bootstrap-5.2.3-dist
+» Im fontawesome-free-6.4.0-web
+& content.txt
+
+1. Implementasi
+Buat dan modifikasi isi file “index.html”, seperti berikut:
+
+Jindex. html
+
+1 <!DOCTYPE html»
+
+2 <html lang="en">
+
+3
+
+4 <head>
+
+5 <meta charset="UTF-8" />
+
+6 <meta http-equiv="X-UA-Compatible"” content="IE=edge" />
+
+7 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+8 <title>PABWE - Agency Template</title>
+
+9
+
+10 <!-- Font Awesome 6 -->
+
+11 <link rel="stylesheet" href="/assets/vendor/fontawesome-free-6.4.0-
+web/css/all.min.css" />
+
+12
+
+13 <!-- Bootstrap 5 -->
+
+14 <link rel="stylesheet" href="/assets/vendor/bootstrap-5.2.3-
+dist/css/bootstrap.min.css"” /»>
+
+15
+
+16 <!-- AOS Animation -->
+
+17 <link rel="stylesheet" href="/assets/vendor/aos-master/dist/aos.css" />
+
+18
+
+19 <!-- Custom CSS -->
+
+20 <link rel="stylesheet" href="/assets/css/style.css" />
+
+21 </head>
+
+22
+
+23 <body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
+
+24 <!-- Start | Navigation Bar -->
+
+25 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+
+id="navbar-scroll”>
+
+Praktikum 6 Page 14 of 25
+Praktikumé6/11S3109-PABWE r e |
+
+JavaScript Labs #3
+Jindex.htm1
+
+26 <div class="container">
+
+27 <a href="#" class="navbar-brand">PABWE</a>
+
+28 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-
+target="#navbarMenu">
+
+29 <i class="fas fa-bars"></i>
+
+30 </button>
+
+31 <div class="collapse navbar-collapse"” id="navbarMenu">
+
+32 <ul class="navbar-nav ms-auto my-3 my-md-@ fw-bolder">
+
+33 <li class="nav-item">
+
+34 <a href="#home" class="nav-1link">Home</a>
+
+35 </li>
+
+36 <li class="nav-item">
+
+37 <a href="#about" class="nav-1link">About</a>
+
+38 </li>
+
+39 <li class="nav-item">
+
+40 <a href="#services” class="nav-link">Services</a>
+
+41 </1i>
+
+42 <li class="nav-item">
+
+43 <a href="#pricing" class="nav-link">Pricing</a>
+
+44 </li>
+
+45 </ul>
+
+46 </div>
+
+47 </div>
+
+48 </nav>
+
+49 <!-- End | Navigation Bar -->
+
+50
+
+51 <!-- Start | Hero Section -->
+
+52 <section id="home" class="container">
+
+53 <div class="row min-vh-100">
+
+54 <div class="col-1g-6 d-flex flex-column justify-content-center
+order-1 order-1g-0">
+
+55 <hl class="fw-bold pb-4" data-aos="fade-up">
+
+56 We offer modern solutions for growing your business
+
+57 </h1>
+
+58 <h3 class="fs-4 pb-4" data-aos="fade-up"” data-aos-delay="200">
+
+59 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Laudantium,
+
+60 consectetur esse. Alias totam possimus, veniam assumenda placeat
+
+61 obcaecati quidem beatae architecto.
+
+62 </h3>
+
+63 <div data-aos="fade-up" data-aos-delay="300">
+
+64 <a href="#about" class="btn btn-info btn-1lg text-white">
+
+65 Get Started <i class="fas fa-long-arrow-alt-right ms-3"></i>
+
+66 </a>
+
+67 </div>
+
+68 </div>
+
+69 <div class="col-1g-6 d-flex align-self-center">
+
+70 <img src="/assets/img/why-us.png" alt="" class="img-fluid" data-
+aos="fade-left" />
+
+71 </div>
+
+Praktikum 6 Page 15 of 25
+Praktikumé6/11S3109-PABWE r e |
+
+JavaScript Labs #3
+Jindex.htm1
+
+72 </div>
+
+73 </section>
+
+74 <!-- End | Hero Section -->
+
+75
+
+76 <!-- Start | The Info Box -->
+
+77 <div class="container my-5">
+
+78 <div class="row mb-5">
+
+79 <div class="col-1g-3 col-md-6 mb-4">
+
+80 <div class="d-flex justify-content-around shadow-1lg align-items-
+center p-4 rounded” data-aos="fade-up">
+
+81 <div>
+
+82 <i class="far fa-smile fa-3x text-primary"></i>
+
+83 </div>
+
+84 <div>
+
+85 <p class="fs-1 fw-bolder mb-0">242</p>
+
+86 <p class="mb-1">Happy Clients</p>
+
+87 </div>
+
+88 </div>
+
+89 </div>
+
+90
+
+91 <div class="col-1g-3 col-md-6 mb-4">
+
+92 <div class="d-flex justify-content-around shadow-1lg align-items-
+center p-4 rounded" data-aos="fade-up”
+
+93 data-aos-delay="150">
+
+94 <div>
+
+95 <i class="fas fa-trophy fa-3x text-warning"></i>
+
+96 </div>
+
+97 <div>
+
+98 <p class="fs-1 fw-bolder mb-0">242</p>
+
+29 <p class="mb-1">Awards Won</p>
+
+100 </div>
+
+101 </div>
+
+102 </div>
+
+103
+
+104 <div class="col-1g-3 col-md-6 mb-4">
+
+105 <div class="d-flex justify-content-around shadow-1lg align-items-
+center p-4 rounded” data-aos="fade-up”
+
+106 data-aos-delay="300">
+
+107 <div>
+
+108 <i class="fas fa-file-invoice fa-3x text-success"></i>
+
+109 </div>
+
+110 <div>
+
+111 <p class="fs-1 fw-bolder mb-0">242</p>
+
+112 <p class="mb-1">Project Done</p>
+
+113 </div>
+
+114 </div>
+
+115 </div>
+
+116
+
+117 <div class="col-1g-3 col-md-6 mb-4">
+
+Praktikum 6 Page 16 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+Jindex.htm1
+118 <div class="d-flex justify-content-around shadow-1g align-items-
+center p-4 rounded" data-aos="fade-up"
+119 data-aos-delay="450">
+120 <div>
+121 <i class="fas fa-user-friends fa-3x text-danger"></i>
+122 </div>
+123 <div>
+124 <p class="fs-1 fw-bolder mb-@">15</p>
+125 <p class="mb-1">Team Members</p>
+126 </div>
+127 </div>
+128 </div>
+129 </div>
+130 </div>
+131 <!-- End | The Info Box -->
+132
+133 <!-- Start | About Section -->
+134 <section id="about" class="bg-light py-5">
+135 <div class="container">
+136 <div class="text-center py-5">
+137 <h2 class="fw-bolder border-bottom border-info border-3 d-inline-
+block pb-1" data-aos="zoom-in">
+138 About
+139 </h2>
+140 <p class="fs-5 mt-3" data-aos="zoom-in-up" data-aos-delay="50">
+141 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+cum
+142 ipsum esse officia soluta est enim cumque!
+143 </p>
+144 </div>
+145 <div class="col-x1-8 mx-auto mb-5">
+146 <div class="accordion">
+147 <!-- Accordion Item -->
+148 <div class="accordion-item rounded-3 shadow-sm mb-3" data-
+aos="fade-up">
+149 <h5 class="accordion-header rounded-3 overflow-hidden">
+150 <button class="accordion-button collapsed” data-bs-
+toggle="collapse" data-bs-target="#collapseOne">
+151 Short history about the company.
+152 </button>
+153 </h5>
+154 <div class="accordion-collapse collapse" id="collapseOne">
+155 <div class="accordion-body">
+156 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+157 Repudiandae adipisci cum ea reprehenderit cumque dolorum
+158 consequatur voluptas praesentium aspernatur earum ut ab
+eum,
+159 voluptatum totam laudantium dicta quasi facere tempora?
+160 </div>
+161 </div>
+
+Praktikum 6 Page 17 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+Jindex.htm1
+
+162 </div>
+
+163
+
+164 <!-- Accordion Item -->
+
+165 <div class="accordion-item rounded-3 shadow-sm mb-3" data-
+aos="fade-up" data-aos-delay="100">
+
+166 <h5 class="accordion-header rounded-3 overflow-hidden">
+
+167 <button class="accordion-button collapsed” data-bs-
+toggle="collapse" data-bs-target="#collapseTwo">
+
+168 What we have achived over the years?
+
+169 </button>
+
+170 </h5>
+
+171 <div class="accordion-collapse collapse” id="collapseTwo">
+
+172 <div class="accordion-body">
+
+173 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+174 Repudiandae adipisci cum ea reprehenderit cumque dolorum
+
+175 consequatur voluptas praesentium aspernatur earum ut ab
+eum,
+
+176 voluptatum totam laudantium dicta quasi facere tempora?
+
+177 </div>
+
+178 </div>
+
+179 </div>
+
+180
+
+181 <!-- Accordion Item -->
+
+182 <div class="accordion-item rounded-3 shadow-sm mb-3" data-
+aos="fade-up" data-aos-delay="200">
+
+183 <h5 class="accordion-header rounded-3 overflow-hidden">
+
+184 <button class="accordion-button collapsed” data-bs-
+toggle="collapse" data-bs-target="#collapseThree">
+
+185 Why you should choose us?
+
+186 </button>
+
+187 </h5>
+
+188 <div class="accordion-collapse collapse” id="collapseThree">
+
+189 <div class="accordion-body">
+
+190 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+191 Repudiandae adipisci cum ea reprehenderit cumque dolorum
+
+192 consequatur voluptas praesentium aspernatur earum ut ab
+eum,
+
+193 voluptatum totam laudantium dicta quasi facere tempora?
+
+194 </div>
+
+195 </div>
+
+196 </div>
+
+197
+
+198 <!-- Accordion Item -->
+
+199 <div class="accordion-item rounded-3 shadow-sm mb-3" data-
+aos="fade-up" data-aos-delay="300">
+
+200 <h5 class="accordion-header rounded-3 overflow-hidden">
+
+201 <button class="accordion-button collapsed” data-bs-
+toggle="collapse" data-bs-target="#collapseFour">
+
+202 What makes us special?
+
+203 </button>
+
+Praktikum 6 Page 18 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3 Ta
+Jindex.htm1
+
+204 </h5>
+
+205 <div class="accordion-collapse collapse" id="collapseFour">
+
+206 <div class="accordion-body">
+
+207 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+208 Repudiandae adipisci cum ea reprehenderit cumque dolorum
+
+209 consequatur voluptas praesentium aspernatur earum ut ab
+eum,
+
+210 voluptatum totam laudantium dicta quasi facere tempora?
+
+211 </div>
+
+212 </div>
+
+213 </div>
+
+214 </div>
+
+215 </div>
+
+216 </div>
+
+217 </section>
+
+218 <!-- End | About Section -->
+
+219
+
+220 <!-- Start | Services Section -->
+
+221 <div id="services" class="container py-5">
+
+222 <div class="text-center py-5">
+
+223 <h2 class="fw-bolder border-bottom border-info border-3 d-inline-
+block pb-1" data-aos="zoom-in">
+
+224 Services
+
+225 </h2>
+
+226 <p class="fs-5 mt-3" data-aos="zoom-in-up" data-aos-delay="50">
+
+227 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cum
+
+228 ipsum esse officia soluta est enim cumque!
+
+229 </p>
+
+230 </div>
+
+231 <div class="row pb-5">
+
+232 <I-- Item 1 -->
+
+233 <div class="col-1g-4 col-md-6 mb-4">
+
+234 <div class="shadow-1g p-5 text-center border-bottom border-4
+border-success"” data-aos="fade-right">
+
+235 <i class="far fa-file-archive fa-3x text-success pb-4 pt-2"></i>
+
+236 <h4 class="fw-bolder fs-3 pb-3">Web Design</h4>
+
+237 <p>
+
+238 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Magnam
+
+239 rerum dolorum itaque doloribus optio repellendus perferendis.
+
+240 </p>
+
+241 <a href="#" class="text-success fw-bold text-decoration-none">
+
+242 Read More <i class="fas fa-long-arrow-alt-right ms-1"></i>
+
+243 </a>
+
+244 </div>
+
+245 </div>
+
+246 <l-- Item 2 -->
+
+247 <div class="col-1g-4 col-md-6 mb-4">
+
+248 <div class="shadow-1g p-5 text-center border-bottom border-4
+
+border-danger"” data-aos="fade-up">
+
+Praktikum 6 Page 19 of 25
+Praktikumé6/11S3109-PABWE r e |
+
+JavaScript Labs #3
+Jindex.htm1
+
+249 <i class="far fa-file-archive fa-3x text-danger pb-4 pt-2"></i>
+
+250 <h4 class="fw-bolder fs-3 pb-3">Web Design</h4>
+
+251 <p>
+
+252 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Magnam
+
+253 rerum dolorum itaque doloribus optio repellendus perferendis.
+
+254 </p>
+
+255 <a href="#" class="text-danger fw-bold text-decoration-none”>
+
+256 Read More <i class="fas fa-long-arrow-alt-right ms-1"></i>
+
+257 </a>
+
+258 </div>
+
+259 </div>
+
+260 <!-- Item 3 -->
+
+261 <div class="col-1g-4 col-md-6 mb-4">
+
+262 <div class="shadow-1g p-5 text-center border-bottom border-4
+border-warning” data-aos="fade-left">
+
+263 <i class="far fa-file-archive fa-3x text-warning pb-4 pt-2"></i>
+
+264 <h4 class="fw-bolder fs-3 pb-3">Web Design</h4>
+
+265 <p>
+
+266 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Magnam
+
+267 rerum dolorum itaque doloribus optio repellendus perferendis.
+
+268 </p>
+
+269 <a href="#" class="text-warning fw-bold text-decoration-none">
+
+270 Read More <i class="fas fa-long-arrow-alt-right ms-1"></i>
+
+271 </a>
+
+272 </div>
+
+273 </div>
+
+274 <l-- Item 4 -->
+
+275 <div class="col-1g-4 col-md-6 mb-4">
+
+276 <div class="shadow-1g p-5 text-center border-bottom border-4
+border-danger"” data-aos="fade-right">
+
+277 <i class="far fa-file-archive fa-3x text-danger pb-4 pt-2"></i>
+
+278 <h4 class="fw-bolder fs-3 pb-3">Web Design</h4>
+
+279 <p>
+
+280 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Magnam
+
+281 rerum dolorum itaque doloribus optio repellendus perferendis.
+
+282 </p>
+
+283 <a href="#" class="text-danger fw-bold text-decoration-none”>
+
+284 Read More <i class="fas fa-long-arrow-alt-right ms-1"></i>
+
+285 </a>
+
+286 </div>
+
+287 </div>
+
+288 <!-- Item 5 -->
+
+289 <div class="col-1g-4 col-md-6 mb-4">
+
+290 <div class="shadow-1g p-5 text-center border-bottom border-4
+border-info" data-aos="fade-up">
+
+291 <i class="far fa-file-archive fa-3x text-info pb-4 pt-2"></i>
+
+292 <h4 class="fw-bolder fs-3 pb-3">Web Design</h4>
+
+Praktikum 6 Page 20 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3 Ta
+Jindex.htm1
+
+293 <p>
+
+294 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Magnam
+
+295 rerum dolorum itaque doloribus optio repellendus perferendis.
+
+296 </p>
+
+297 <a href="#" class="text-info fw-bold text-decoration-none">
+
+298 Read More <i class="fas fa-long-arrow-alt-right ms-1"></i>
+
+299 </a>
+
+300 </div>
+
+301 </div>
+
+302
+
+303 <div class="col-1g-4 col-md-6 mb-4">
+
+304 <div class="shadow-1g p-5 text-center border-bottom border-4
+border-success"” data-aos="fade-left">
+
+305 <i class="far fa-file-archive fa-3x text-success pb-4 pt-2"></i>
+
+306 <h4 class="fw-bolder fs-3 pb-3">Web Design</h4>
+
+307 <p>
+
+308 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Magnam
+
+309 rerum dolorum itaque doloribus optio repellendus perferendis.
+
+310 </p>
+
+311 <a href="#" class="text-success fw-bold text-decoration-none">
+
+312 Read More <i class="fas fa-long-arrow-alt-right ms-1"></i>
+
+313 </a>
+
+314 </div>
+
+315 </div>
+
+316 </div>
+
+317 </div>
+
+318 <!-- End | Services Section -->
+
+319
+
+320 <!-- Start | Newsletter Section -->
+
+321 <div class="py-5" style="background: url(/assets/img/cta.jpg) fixed">
+
+322 <div class="container text-white">
+
+323 <div class="row py-5 d-flex align-items-center justify-content-
+between">
+
+324 <div class="col-1g-9">
+
+325 <h2 class="fw-bold fs-3 pb-3" data-aos="fade-up">
+
+326 Subscribe To Newsletter
+
+327 </h2>
+
+328 <p data-aos="fade-up" data-aos-delay="100">
+
+329 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Eveniet
+
+330 minus perspiciatis eaque nobis voluptas eum placeat unde iste
+
+331 atque ad aliquam, illo pariatur similique alias quae suscipit
+
+332 molestias consectetur voluptatum.
+
+333 </p>
+
+334 </div>
+
+335 <div class="col-1g-3 text-1lg-center" data-aos="fade-left">
+
+336 <a href="#" class="btn btn-outline-info rounded-pill btn-1lg
+
+text-white" data-bs-target="#subscribeModal”
+
+Praktikum 6 Page 21 of 25
+Praktikumé6/11S3109-PABWE r e |
+
+JavaScript Labs #3
+Jindex.html
+337 data-bs-toggle="modal">
+338 Subscribe
+339 </a>
+340 </div>
+341 </div>
+342 <!-- start | modal -->
+343 <div class="modal fade text-dark" id="subscribeModal">
+344 <div class="modal-dialog">
+345 <div class="modal-content”>
+346 <div class="modal-header">
+347 <h5 class="modal-title">Subscribe To Our Newsletter</h5>
+348 <button class="btn-close"” data-bs-dismiss="modal" aria-
+label="close"></button>
+349 </div>
+350 <div class="modal-body">
+351 <form action="">
+352 <div class="mb-3">
+353 <label for="name" class="col-form-label">Your
+Name:</label>
+354 <input type="text" class="form-control"” id="name" />
+355 </div>
+356 <div class="mb-3">
+357 <label for="email" class="col-form-label">Your
+Email:</label>
+358 <input type="email" class="form-control” id="email"” />
+359 </div>
+360 </form>
+361 </div>
+362 <div class="modal-footer">
+363 <button class="btn btn-outline-secondary"” data-bs-
+dismiss="modal">
+364 Close
+365 </button>
+366 <button class="btn btn-info text-white">Subscribe</button>
+367 </div>
+368 </div>
+369 </div>
+370 </div>
+371 <!-- end | modal -->
+372 </div>
+373 </div>
+374 <!-- End | Newsletter Section --»>
+375
+376 <!-- Start | Pricing Section -->
+377 <section id="pricing" class="container py-5">
+378 <div class="text-center py-5">
+379 <h2 class="fw-bolder border-bottom border-3 d-inline-block border-
+info pb-1" data-aos="zoom-in">
+380 Pricing
+381 </h2>
+
+Praktikum 6 Page 22 of 25
+Praktikumé6/11S3109-PABWE o e |
+
+JavaScript Labs #3
+Jindex.htm1
+
+382 <p class="fs-5 mt-3" data-aos="zoom-in-up" data-aos-delay="50">
+
+383 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi cum
+
+384 ipsum esse officia soluta est enim cumque!
+
+385 </p>
+
+386 </div>
+
+387 <div class="row pb-5">
+
+388 <!-- item 1 -->
+
+389 <div class="col-1g-4 mb-4">
+
+390 <div class="text-center p-5 shadow-1g" data-aos="fade-right">
+
+391 <h4 class="fw-bold py-3">Free Plan</h4>
+
+392 <p class="fs-1 fw-bolder mb-0">$00.<small>0@0</small></p>
+
+393 <p class="text-info fw-bolder">per month</p>
+
+394 <div class="1list py-3">
+
+395 <ul class="list-group list-group-flush”>
+
+396 <li class="1list-group-item">
+
+397 ullam illum ab veritatis similique eos
+
+398 </1i>
+
+399 <1i class="list-group-item">
+
+400 sit amet consectetur adipisicing elit
+
+401 </1i>
+
+402 <1i class="list-group-item">
+
+403 similique dolorem aspernatur eos
+
+404 </1i>
+
+405 <li class="1list-group-item text-decoration-line-through">
+
+406 sequi reiciendis hic architecto delectus
+
+407 </li>
+
+408 <1i class="list-group-item text-decoration-line-through"”>
+
+409 Nisi commodi saepe a voluptatem
+
+410 </1i>
+
+411 </ul>
+
+412 </div>
+
+413 </div>
+
+414 </div>
+
+415 <!-- item 2 -->
+
+416 <div class="col-1g-4 mb-4">
+
+417 <div class="text-center p-5 shadow-1lg border-top border-bottom
+border-info border-4" data-aos="fade-up">
+
+418 <h4 class="fw-bold py-3">Single Plan</h4>
+
+419 <p class="fs-1 fw-bolder mb-0">$49.<small>@0</small></p>
+
+420 <p class="text-info fw-bolder">per month</p>
+
+421 <div class="1list py-3">
+
+422 <ul class="list-group list-group-flush">
+
+423 <li class="list-group-item">
+
+424 ullam illum ab veritatis similique eos
+
+425 </1i>
+
+426 <li class="1list-group-item">
+
+427 sit amet consectetur adipisicing elit
+
+428 </1i>
+
+429 <1i class="list-group-item">
+
+430 similique dolorem aspernatur eos
+
+Praktikum 6 Page 23 of 25
+Praktikumé6/11S3109-PABWE o e |
+===
+
+JavaScript Labs #3 a
+Jindex.htm1
+431 </1i>
+432 <li class="1list-group-item">
+433 sequi reiciendis hic architecto delectus
+434 </li>
+435 <li class="1list-group-item text-decoration-line-through">
+436 Nisi commodi saepe a voluptatem
+437 </1i>
+438 </ul>
+439 </div>
+449 </div>
+441 </div>
+442 <!-- item 3 -->
+443 <div class="col-1g-4 mb-4">
+444 <div class="text-center p-5 shadow-1g" data-aos="fade-left">
+445 <h4 class="fw-bold py-3">Team Plan</h4>
+446 <p class="fs-1 fw-bolder mb-0">$99.<small>00</small></p>
+447 <p class="text-info fw-bolder">per month</p>
+448 <div class="1list py-3">
+449 <ul class="1list-group list-group-flush">
+450 <li class="1list-group-item">
+451 ullam illum ab veritatis similique eos
+452 </1i>
+453 <li class="1list-group-item">
+454 sit amet consectetur adipisicing elit
+455 </li>
+456 <1i class="list-group-item">
+457 similique dolorem aspernatur eos
+458 </1i>
+459 <li class="1list-group-item">
+460 sequi reiciendis hic architecto delectus
+461 </1i>
+462 <li class="1list-group-item">Nisi commodi saepe a
+voluptatem</1i>
+463 </ul>
+464 </div>
+465 </div>
+466 </div>
+467 </div>
+468 </section>
+469 <!-- End | Pricing Section -->
+470
+471 <!-- Start | Footer Section -->
+472 <div class="bg-dark text-white">
+473 <div class="container d-flex justify-content-between pt-3 pb-1">
+474 <p>@All rights reserved</p>
+475 <p>
+476 Designed by
+477 <a href="#" class="text-info text-decoration-none">PABWE</a>
+478 </p>
+479 </div>
+
+Praktikum 6 Page 24 of 25
+Praktikumé6/11S3109-PABWE - a
+JavaScript Labs #3 a]
+
+Jindex.html |
+480 </div>
+481 <!-- End | Footer Section -->
+482
+483 <script src="/assets/vendor/bootstrap-5.2.3-
+dist/js/bootstrap.bundle.min.js"></script>
+
+484 <script src="/assets/vendor/aos-master/dist/aos.js" ></script>
+485 <script>
+
+486 AOS.init({
+
+487 duration: 16000,
+
+488 1)
+
+489 </script>
+490 </body>
+491
+
+492 </html>
+|
+Analisis cara kerja kode program di atas. Jalankan aplikasi menggunakan Live Server,
+
+selanjutnya amati tampilan pada halaman web browser dan console web browser.
+
+Tantangan Praktikum:
+Tantangan praktikum berisikan studi kasus yang perlu untuk diselesaikan permasalahannya
+agar melatih pemahaman yang telah diperoleh dari latihan praktikum.
+
+1. Menyesuaikan Konten
+Ubah semua konten lorem ipsum pada implementasi website agency dengan data bebas
+sesuai kreativitas kamu, tetapi tetap sesuai dengan konteks.
+
+Praktikum 6 Page 25 of 25
